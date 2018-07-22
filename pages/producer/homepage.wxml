@@ -1,0 +1,16 @@
+<view class="distributor-info">
+<view>
+<image class="teacher-avatar" src="{{ logo }}"></image>
+</view>
+<view>
+<text class="contact-view">姓名：{{ name }} \r\n</text>
+<text class="contact-view">UserInfo </text>
+</view>
+<view class='distributor-map'>
+<map latitude="{{ latitude }}" longitude="{{ longitude }}" markers="{{ markers }}" scale="14"></map> 
+</view>
+</view>
+<view>
+<button class="submit" bindtap="plant_harvest">Submit your plant and harvest time</button>
+</view>
+

@@ -1,0 +1,36 @@
+
+<!-- <view wx:elif="{{menuType==2}}" class="state-menu" hidden="{{!isVisible}}"> -->
+
+<view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view>
+    <picker class="plant-display" bindchange="bindPickerChange" value="{{index}}" range="{{ food_types }}">
+      <view class="picker">
+        作物类别：{{food_types[index]}}
+      </view>
+    </picker>
+    </view>
+
+   <picker class="plant-display" mode="date" value="{{date1}}" start="2015-09-01" end="2030-09-01" bindchange="bindDateChange1">
+    <view class="picker">
+      开始日期: {{date1}}
+    </view>
+  </picker>
+  
+  <picker class="plant-display" mode="date" value="{{date2}}" start="2015-09-01" end="2030-09-01" bindchange="bindDateChange2">
+    <view class="picker">
+      结束日期: {{date2}}
+    </view>
+  </picker> 
+
+
+  <view class="btn-area">
+    <button class='button-display' plain='true' formType="submit">Submit</button>
+    <button class='button-display' plain='true' formType="reset">Reset</button>
+    <button class="button-display" plain='true' bindtap="goback">Back</button> 
+  </view>
+</form>
+</view>
+
+
+

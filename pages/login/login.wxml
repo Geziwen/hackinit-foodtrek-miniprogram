@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='title-view'>
+  <text class='title'>登录</text>
+</view>
+
+<form class='login-display' bindsubmit="formSubmit">
+  <input auto-focus='true' type='digit' name='email' class='input' placeholder='请输入用户名' placeholder-class='placeholder'></input>
+  <input password='true' name='password' class='input' placeholder='请输入密码' placeholder-class='placeholder'></input>
+  <button type='primary' formType='submit'>提交</button>
+</form>
+<!-- 
+<view class='container'>
+<button bindtap='test'>TEST</button>
+</view> -->

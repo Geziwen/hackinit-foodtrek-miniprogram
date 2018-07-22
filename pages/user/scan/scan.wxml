@@ -1,6 +1,8 @@
 <!--pages/user/scan/scan.wxml-->
-<view catchtouchmove='false' 
-class='bg' style='background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532206484710&di=0fd1e93de42363326155487b703887da&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fc83d70cf3bc79f3d851fe80db1a1cd11728b2914.jpg)'>
+<view class="style">
+<text bindtap="login">Login Here</text>
+</view>
+<view class='bg' style='background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532206484710&di=0fd1e93de42363326155487b703887da&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fc83d70cf3bc79f3d851fe80db1a1cd11728b2914.jpg)'>
 
 <text class="title">FOODTREK</text>
 

@@ -1,4 +1,19 @@
 /* pages/user/scan/scan.wxss */
+ page{
+   height:100%;
+   width:100%;
+ 
+ }
+
+
+ .style{
+  
+    color:white;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+
+ }
   .bg{
   /* background-image: '../../../imgs/home.jpeg'; */
   background-size:230% 85%;  
@@ -8,16 +23,16 @@
   background-repeat:no-repeat;
 } 
 .roundButton{ 
-margin-top: 80rpx;
+margin-top: 70rpx;
 box-shadow: 0 3px 4px 0 rgba(0,0,0,0.22);
 background: rgba(143,199,68,0.90);
 border-radius: 84px;
- border-radius: 20px; 
+border-radius: 20px; 
 color: #FFF;
 text-align: center;
 width: 80%;
 font-size:20px;
-margin-bottom:500rpx;
+margin-bottom:550rpx;
 }
 .cover{
   height:100%;

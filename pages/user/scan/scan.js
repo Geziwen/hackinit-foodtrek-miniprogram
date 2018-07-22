@@ -7,7 +7,11 @@ Page({
   data: {
   
   },
-
+  login : function(){
+    wx.navigateTo({
+      url: '../../login/login',
+    })
+  },
   scanCode: function(){
     wx.scanCode({
       onlyFromCamera: false,

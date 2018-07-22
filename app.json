@@ -4,6 +4,8 @@
     "pages/logs/logs",
     "pages/producer/homepage",
     "pages/producer/plant_harvest",
+    "pages/send/send",
+    "pages/distributor/distributor",
     "pages/login/login"
   ],
   "window": {

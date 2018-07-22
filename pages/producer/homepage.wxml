@@ -1,0 +1,16 @@
+<view class="distributor-info">
+<view>
+<image class="teacher-avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531565003503&di=d6c13609fa964415e5b3010b7ac1ac0e&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F18%2F06%2F68%2F09958PIC5wI_1024.jpg"></image>
+</view>
+<view>
+<text class="contact-view">姓名：谭炜庭 \r\n</text>
+<text class="contact-view">地址: </text>
+</view>
+<view class='distributor-map'>
+<map latitude="{{ latitude }}" longitude="{{ longitude }}" markers="{{ markers }}" scale="14"></map> 
+</view>
+</view>
+<view>
+<button class="submit" bindtap="plant_harvest">Submit your plant and harvest time</button>
+</view>
+

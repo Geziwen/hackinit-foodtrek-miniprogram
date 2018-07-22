@@ -4,10 +4,15 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Food Trek',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  bindhomepage: function(){
+    wx.navigateTo({
+      url: '../producer/plant_harvest',
+    })
   },
   //事件处理函数
   bindViewTap: function() {

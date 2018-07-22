@@ -8,6 +8,7 @@
   padding-right: 50rpx;
   padding-left: 50rpx;
   box-sizing: border-box;
+  flex-wrap: nowrap;
 } 
 .tabBar{
   

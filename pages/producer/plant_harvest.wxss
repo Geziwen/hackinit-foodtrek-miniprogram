@@ -1,0 +1,26 @@
+.plant-display {
+  margin: 50px;
+  margin-left: 50px;
+  border-bottom: 1px #000 solid; 
+
+}
+.left-up{
+  float:left;
+  width: 50px;
+  font-size:8px;
+ }
+
+.button-display {
+  padding: 5px;
+  margin: 20px 10px;
+}
+
+.pic{
+  width: 100%;
+  height: 100%；
+}
+.border{
+  border: solid gray 1px;
+  width: 80%;
+}
+

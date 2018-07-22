@@ -1,12 +1,20 @@
 {
   "pages":[
+    "pages/user/scan/scan",
+    "pages/user/history/history",
+    "pages/user/food/food",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Foodtreck",
     "navigationBarTextStyle":"black"
   }
-}
+} 
+ 
+
+
+
+  

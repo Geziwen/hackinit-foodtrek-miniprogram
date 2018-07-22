@@ -1,0 +1,32 @@
+<!--pages/user/food/food.wxml-->
+<view class="interval"></view>
+
+<view class="container">
+  <view class="food-info">
+    <view class="title">
+     {{title}}
+    </view>
+    <view class="producer-name">
+      <text>{{producer-name}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="interval"></view>
+
+<view class="container">
+    <view class="location-info">
+         <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="5" bindcontroltap="controltap" markers="{{markers}}" polyline="{{polylines}}" show-location style="width:100%;height:300rpx;"></map>   
+    </view>
+    
+    <view class="location-display">
+      <view class="distributor-list-item" wx:for="{{distributors}}" wx:key="index">
+          <view class="name">{{distributors[index].sender.name}} \n</view>
+          <view class="address">{{distributors[index].sender.address}} \n</view>
+           <view class="time">{{distributors[index].received_at}}</view>  
+       </view> 
+
+       <!-- <canvas canvas-id='dot'/> -->
+    </view>
+  </view>
+

@@ -1,0 +1,47 @@
+/* pages/user/food/food.wxss */
+.interval{
+  height: 30rpx;
+  background-color: #F1F1F0;
+}
+
+.title{
+ margin-top: 20px;
+ line-height: 1.2;
+ font-size: 40px;
+ text-align: left;
+
+}
+.producer-name{
+  line-height: 1; 
+ font-size: 15px;
+ margin-bottom: 20px;
+}
+.location-info{
+   margin-top: 20px;
+}
+#map{
+ 
+}
+.location-display{
+   margin-top: 20px; 
+  
+}
+.distributor-list-item{
+  line-height: 30px;  
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #F1F1F0 transparent transparent transparent;
+
+}
+.name{
+
+  font-size: 15px;
+}
+.address{
+  font-size: 10px;
+  color:#9FD656;
+}
+.time{
+  margin-top:0px;
+  font-size: 10px;
+}

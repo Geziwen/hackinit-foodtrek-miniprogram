@@ -4,15 +4,32 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Food Trek',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  bindhomepage: function(){
+    wx.navigateTo({
+      url: '../producer/plant_harvest',
+    })
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+
+  enter: function() {
+    wx.navigateTo({
+      url: '../distributor/distributor',
+    })
+  },
+
+  login: function() {
+    wx.navigateTo({
+      url: '../login/login',
     })
   },
   onLoad: function () {

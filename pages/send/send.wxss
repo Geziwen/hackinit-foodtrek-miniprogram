@@ -1,0 +1,35 @@
+.bg-purple {
+  background-color: whitesmoke;
+  line-height: 100rpx;
+}
+
+.title {
+  text-align: center;
+  margin: 15px 5px;
+}
+
+.bg-white {
+  background-color: white;
+  line-height: 100rpx;
+}
+
+page {
+  width: 100%;
+}
+
+.sender-button {
+  position: absolute;
+  left: 80%
+}
+
+.sender-text {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.sender-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

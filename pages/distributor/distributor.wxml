@@ -1,0 +1,72 @@
+<view class="distributor-info">
+  <view>
+    <image class="teacher-avatar" src="{{ logo }}"></image>
+    </view>
+    <view>
+      <text class="contact-view">姓名：{{ name }} \r\n</text>
+      <text class="contact-view">地址: abc123abc123</text>
+  </view>
+  <view class='distributor-map'>
+    <map latitude="{{ latitude }}" longitude="{{ longitude }}" markers="{{ markers }}" scale="14"></map>  
+  </view>
+</view>
+<!-- <view class="content">
+  <button bindtap='message' plain='true' class="distributor-button">我的消息</button>
+  <button bindtap='send' plain='true' class="distributor-button">寄送货物</button>
+  <button bindtap='receive' plain='true' class="distributor-button">确认接收</button>
+</view> -->
+<scroll-view scroll-x="true" class="weui-navbar">
+  <block wx:for-items="{{tabs}}">
+  <view id="{{index}}" class="{{activeIndex == index ?'item_on':''}} default-item" bindtap="tabClick" style="width:{{tabW}}px">
+  {{item}}
+  </view>
+ </block>
+ <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view>
+</scroll-view>
+<view class="rec" />
+<swiper current="{{activeIndex}}" class="swiper-box" duration="300" bindchange="bindChange">
+ <swiper-item class="swiper-item">
+  <view class="slide-view">
+  <view wx:for="{{ requests }}">
+    <view class="{{ index % 2 == 0 ? 'bg-white' : 'bg-purple' }}"> 
+      <text class='distributor-text'>货物: {{ requests[index].product }} \n</text>
+      <text class='distributor-text'>寄出方: {{ requests[index].sender_name }}</text>
+      <button data-id='{{ index }}' data-trans='{{ requests[index].trans_id }}' bindtap='confirm' plain='true' type="primary" size='mini' class='distributor-button'>接受请求</button>
+    </view>
+  </view>
+  </view>
+ </swiper-item>
+  <swiper-item class="swiper-item">
+  <view class="slide-view">
+  <view wx:for="{{ toBeReceived }}">
+    <view class="{{ index % 2 == 0 ? 'bg-white' : 'bg-purple' }}"> 
+      <text class='distributor-text'>货物: {{ toBeReceived[index].product }} \n</text>
+      <text class='distributor-text'>寄出信息: {{ toBeReceived[index].receiver_name }} {{ toBeReceived[index].receiver_contact }}</text>
+      <button data-id='{{ index }}' data-trans='{{ toBeReceived[index].trans_id }}' bindtap='receive' plain='true' type="primary" size='mini' class='distributor-button'>确认接收</button>
+    </view>
+  </view>
+  </view>
+ </swiper-item>
+  <swiper-item class="swiper-item">
+  <view class="slide-view">
+  <view wx:for="{{ sends }}">
+    <view class="{{ index % 2 == 0 ? 'bg-white' : 'bg-purple' }}"> 
+      <text class='distributor-text'>寄出时间: {{ sends[index].time }} \n</text>
+      <text class='distributor-text'>货物: {{ sends[index].product }}</text>
+      <button plain='true' type="{{ status[index].status_type }}" size='mini' class='distributor-button'>{{ status[index].message }}</button>
+    </view>
+  </view>
+  </view>
+ </swiper-item>
+  <swiper-item class="swiper-item">
+  <view class="slide-view">
+  <view wx:for="{{ received }}">
+    <view class="{{ index % 2 == 0 ? 'bg-white' : 'bg-purple' }}"> 
+      <text class='distributor-text'>寄出信息: {{ received[index].receiver_name }} \n</text>
+      <text class='distributor-text'>抵达时间: {{ received[index].received_time }}</text>
+      <button bindtap='send' plain='true' type="primary" size='mini' class='distributor-button'>寄出货物</button>
+    </view>
+  </view>
+  </view>
+ </swiper-item>
+</swiper>

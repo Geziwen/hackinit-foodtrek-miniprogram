@@ -1,0 +1,9 @@
+<view class='title'>
+  <text>请选择目标商户寄出</text>
+</view>
+<view wx:for="{{ distributors }}">
+  <view class="sender-display {{ index % 2 == 0 ? 'bg-white' : 'bg-purple' }}"> 
+    <text class='sender-text'>{{ distributors[index] }} \n</text>
+    <button data-id='{{ index }}' bindtap='send' type="primary" size='mini' class='sender-button'>发送</button>
+  </view>
+</view>

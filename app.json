@@ -1,12 +1,24 @@
 {
   "pages":[
+    "pages/login/login",
+    "pages/user/scan/scan",
+    "pages/user/food/food",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/producer/homepage",
+    "pages/producer/plant_harvest",
+    "pages/send/send",
+    "pages/distributor/distributor"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Foodtreck",
     "navigationBarTextStyle":"black"
   }
-}
+} 
+ 
+
+
+
+  

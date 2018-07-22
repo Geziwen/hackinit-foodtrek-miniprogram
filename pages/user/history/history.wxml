@@ -1,0 +1,10 @@
+<!--pages/user/history/history.wxml-->
+<view class="title"><text>历史记录</text></view>
+<view class="scan-info">
+  <view class="scan-item">
+  <text class="location"></text>
+  <text class="time"></text>
+
+  </view>
+
+</view>

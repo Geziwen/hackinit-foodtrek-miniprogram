@@ -55,5 +55,9 @@ App({
   globalData: {
     userInfo: null,
     locationInfo: null,
+    id: null,
+    api_token: null,
+    user_id: null,
+    user_role: null,
   }
 })

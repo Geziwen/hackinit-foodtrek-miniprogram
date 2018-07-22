@@ -7,7 +7,13 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         <button bindtap='bindhomepage'>Home Page</button>
     </block>
+
     </view>
+
+
+  <button bindtap="enter">Test entrance</button>
+  <button bindtap="login">Test login</button>
+  
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

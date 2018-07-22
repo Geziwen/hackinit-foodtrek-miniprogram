@@ -37,7 +37,7 @@ Page({
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     wx.request({
-      url: 'https://geziwen.com:6002/api/product',
+      url: 'https://geziwen.com:6002/api/product/create',
       data: {
         type_id : this.data.index+1,
       },

@@ -4,7 +4,7 @@
 </view>
 <view>
 <text class="contact-view">姓名：谭炜庭 \r\n</text>
-<text class="contact-view">地址: </text>
+<text class="contact-view">UserInfo </text>
 </view>
 <view class='distributor-map'>
 <map latitude="{{ latitude }}" longitude="{{ longitude }}" markers="{{ markers }}" scale="14"></map> 

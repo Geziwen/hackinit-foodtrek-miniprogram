@@ -20,7 +20,7 @@ margin-bottom: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
-} */
+} 
 
 .bg-none {
 background-image: none;
@@ -37,7 +37,7 @@ height: 150px;
 font-size: 12px;
 margin: 15px 10px 15px 0px;
 border-bottom: 1px #077 solid;
-}
+}?'''''''''''''''''''''''''''''''''''''''''
 
 .img-avatar {
 width: 128rpx;

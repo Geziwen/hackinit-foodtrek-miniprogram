@@ -15,6 +15,18 @@ Page({
       url: '../logs/logs'
     })
   },
+
+  enter: function() {
+    wx.navigateTo({
+      url: '../distributor/distributor',
+    })
+  },
+
+  login: function() {
+    wx.navigateTo({
+      url: '../login/login',
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
